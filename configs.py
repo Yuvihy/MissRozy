@@ -42,7 +42,7 @@ class Config(object):
 	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "Movies_flix_storagebot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001979319683))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1252715736"))
-	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://yashjadaun974:YChtg9WYjLJW3ujr@cluster0.x1qrmu9.mongodb.net/")
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://yashjadaun974:YChtg9WYjLJW3ujr@cluster0.x1qrmu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001983877514")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001973921006")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
